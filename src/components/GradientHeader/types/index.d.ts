@@ -1,6 +1,6 @@
-export type gradientHeaderProps = {
-  className?: string;
+export type GradientHeaderProps = {
   children?: React.ReactNode;
-  from: string;
-  to: string;
+  from?: string;
+  to?: string;
+  height?: string;
 };

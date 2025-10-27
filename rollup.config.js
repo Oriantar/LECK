@@ -6,7 +6,8 @@ import typescript from "@rollup/plugin-typescript";
 import terser from "@rollup/plugin-terser";
 import postcss from "rollup-plugin-postcss";
 import packageJson from "./package.json" with { type: "json" };
-
+import tailwindcss from "tailwindcss";
+import autoprefixer from "autoprefixer";
 export default [
   {
     input: "src/index.ts",
@@ -28,7 +29,11 @@ export default [
       commonjs(),
       typescript({ tsconfig: "./tsconfig.json" }),
       terser(),
-      postcss(),
+      postcss({
+        extract: "index.css",
+        minimize: true,
+        plugins: [tailwindcss(), autoprefixer()],
+      }),
     ],
     external: ["react", "react-dom"],
   },

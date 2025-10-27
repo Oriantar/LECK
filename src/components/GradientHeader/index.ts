@@ -1,1 +1,1 @@
-export { gradientHeader } from "./gradientHeader";
+export { GradientHeader } from "./gradientHeader";

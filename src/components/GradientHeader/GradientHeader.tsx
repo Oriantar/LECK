@@ -1,14 +1,21 @@
-import type { gradientHeaderProps } from "./types";
+import type { GradientHeaderProps } from "./types";
 
-export function gradientHeader({
-  className,
+export function GradientHeader({
   children,
   from,
   to,
-}: gradientHeaderProps) {
+  height,
+}: GradientHeaderProps) {
+  if (!height) height = "150px";
+  if (!from) from = "#bc3cd3";
+  if (!to) to = "#ff5892";
+
   return (
     <header
-      className={` h-[125px] bg-gradient-to-br from-[${from}] to-[${to}] color-white ${className}`}
+      style={{
+        height,
+        background: `linear-gradient(to bottom right, ${from}, ${to})`,
+      }}
     >
       {children}
     </header>

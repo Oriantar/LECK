@@ -1,1 +1,2 @@
-export { gradientHeader } from "./components/gradientHeader";
+export * from "./components";
+import "./index.css";
