@@ -8,4 +8,4 @@ Expo
 Components
 Kit
 
-[The logo of LECK](./logo.png)
+![The logo of LECK](./logo.png)
