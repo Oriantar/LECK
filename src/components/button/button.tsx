@@ -1,6 +1,13 @@
 import type { ButtonProps } from "./types";
-export function Button({ title, subtitle, link, color }: ButtonProps) {
-  if (!color) color = "blue";
+export function Button({
+  title,
+  subtitle,
+  link,
+  color,
+  textcolor,
+}: ButtonProps) {
+  if (!color) color = "#0000ff";
+  if (!textcolor) textcolor = "white";
   return (
     <a href={link}>
       <button
@@ -14,7 +21,7 @@ export function Button({ title, subtitle, link, color }: ButtonProps) {
           border: "none",
           borderRadius: "0.5rem",
           cursor: "pointer",
-          color: "white",
+          color: textcolor,
         }}
       >
         <h3>{title}</h3>

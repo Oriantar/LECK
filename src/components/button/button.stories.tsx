@@ -10,7 +10,8 @@ const meta = {
     link: "#",
     title: "Click Me",
     subtitle: "This is a button",
-    color: "blue",
+    color: "#0000ff",
+    textcolor: "white",
   },
 } satisfies Meta<typeof Button>;
 
@@ -43,6 +44,6 @@ export const WithLargeSubtitle: Story = {
 
 export const RedButton: Story = {
   args: {
-    color: "yellow",
+    color: "#ff0000",
   },
 };
