@@ -9,3 +9,6 @@ Components
 Kit
 
 [The logo of LECK](./logo.png)
+
+use `npx rollup -c` to update the config
+use `npm publish` to publish the newest version of the library

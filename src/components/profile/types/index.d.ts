@@ -1,6 +1,5 @@
 export type ProfileProps = {
   url: string;
-  height?: string;
-  width?: string;
+  heightAndWidth?: string;
   altText: string;
 };

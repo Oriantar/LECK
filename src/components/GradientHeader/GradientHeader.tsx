@@ -15,6 +15,7 @@ export function GradientHeader({
       style={{
         height,
         background: `linear-gradient(to bottom right, ${from}, ${to})`,
+        color: "white",
       }}
     >
       {children}
