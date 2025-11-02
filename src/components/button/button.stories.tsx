@@ -45,5 +45,6 @@ export const WithLargeSubtitle: Story = {
 export const RedButton: Story = {
   args: {
     color: "#ff0000",
+    textcolor: "white",
   },
 };

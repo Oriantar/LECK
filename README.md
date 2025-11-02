@@ -12,3 +12,4 @@ Kit
 
 use `npx rollup -c` to update the config
 use `npm publish` to publish the newest version of the library
+use `npx storybook dev` to test out the components
