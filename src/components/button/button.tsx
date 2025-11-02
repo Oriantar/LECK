@@ -1,3 +1,5 @@
+import { H4 } from "../../theme/headings";
+import "../../index.css";
 import type { ButtonProps } from "./types";
 export function Button({
   title,
@@ -5,9 +7,11 @@ export function Button({
   link,
   color,
   textcolor,
+  style,
 }: ButtonProps) {
   if (!color) color = "#0000ff";
   if (!textcolor) textcolor = "white";
+
   return (
     <a href={link}>
       <button
@@ -18,13 +22,14 @@ export function Button({
           paddingTop: "0.25rem",
           paddingBottom: "0.25rem",
           backgroundColor: color,
-          border: "none",
+          border: "0.125px solid black",
           borderRadius: "0.5rem",
           cursor: "pointer",
           color: textcolor,
+          ...style,
         }}
       >
-        <h3>{title}</h3>
+        <H4 style={{ color: textcolor }}>{title}</H4>
         <p>{subtitle}</p>
       </button>
     </a>

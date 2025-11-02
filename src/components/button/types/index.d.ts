@@ -4,4 +4,5 @@ export type ButtonProps = {
   link: string;
   textcolor?: string;
   color?: string;
+  style?: React.CSSProperties;
 };

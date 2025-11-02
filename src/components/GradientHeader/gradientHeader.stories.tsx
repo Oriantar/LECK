@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
 import { GradientHeader } from "./gradientHeader";
+import { H1 } from "../..";
 
 const meta = {
   title: "Components/GradientHeader",
@@ -16,10 +17,6 @@ export const Default: Story = {
     from: "#ff7e5f",
     to: "#feb47b",
     height: "200px",
-    children: (
-      <h1 style={{ color: "black", textAlign: "center", paddingTop: "70px" }}>
-        test Gradient Header
-      </h1>
-    ),
+    children: <H1 style={{ color: "black" }}>test Gradient Header</H1>,
   },
 };
