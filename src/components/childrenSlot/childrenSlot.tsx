@@ -2,7 +2,6 @@ export function ChildrenSlot() {
   return (
     <div
       style={{
-        borderRadius: "5rem",
         border: "solid",
         borderColor: "#151B54",
         borderStyle: "dashed",
