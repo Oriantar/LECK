@@ -3,7 +3,7 @@ export type CardProps = {
   content: string;
   imageSrc?: string;
   imageAlt?: string;
-  link?: string;
+  onClick?: (() => void);
   children?: React.ReactNode;
   width?: string | number;
 };
